@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpeg">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <nav>
+        <!-- <img src="logo.jpeg" class="logo"> -->
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Projects</a></li>
+            <li><a href="#certificates">Internship</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="container">
+        <img src="Photo-B.jpg" class="imag">
+        <div class="header-text">
+            <h1>Hi, I'm <span class="typing-effect">Divyanshu Mathur 👋</span></h1>
+            <br>
+            <p>Student</p>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="about-col-1">
+                    <img src="\assets\image.png" class="imag2" style="width: fit-content;height: fit-content;">
+                </div> -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p style="color: gray;">I am a B.Tech student specializing in Computer Science and Engineering with
+                        a focus on Data Science at VIT Vellore. I have a strong foundation in web technologies,
+                        including HTML, CSS, and JavaScript, and am proficient in multiple programming languages such as
+                        Python, C, C++, R, and Java. My academic journey has equipped me with a solid understanding of
+                        Data Structures and Algorithms (DSA) and Object-Oriented Programming (OOP). Additionally, I am
+                        skilled in working with databases using MySQL, enabling me to manage and analyze data
+                        effectively. I am passionate about leveraging my skills to solve real-world problems and
+                        contribute to the field of data science.</p>
+                    <br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('softskills')">Soft Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li>BTech Computer Science with Specilisation in Data Science(2022 - Present)
+                                <ul>
+                                    <li>Vellore Institute of Technology,Vellore</li>
+                                    <li>CGPA - 8.99</li>
+                                </ul>
+                            </li>
+                            <li>12<sup>th</sup> Board CBSE(2021 - 2022)
+                                <ul>
+                                    <li>Lucky Bal Niketan Senior Secondary School,Jodhpur,Rajasthan</li>
+                                    <li>Percentage - 92.6%</li>
+                                </ul>
+                            </li>
+                            <li>10<sup>th</sup> Board CBSE(2019 - 2020)
+                                <ul>
+                                    <li>Lucky Bal Niketan Senior Secondary School,Jodhpur,Rajasthan</li>
+                                    <li>Percentage - 90.4%</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="skills">
+                        <div class="img">
+                            <img src="c.jpeg" alt="" srcset="">
+                            <img src="c++.png" alt="">
+                            <img src="python.png" alt="">
+                            <img src="r.jpeg" alt="">
+                            <img src="java.png" alt="">
+                            <img src="html.jpeg" alt="">
+                            <img src="css.jpeg" alt="">
+                            <img src="js.png" alt="">
+                            <img src="react.png" alt="">
+                            <img src="mysql.png" alt="">
+                        </div>
+                        <!-- <ul>
+                            <li>Java</li>
+                            <li>HTML and CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>ReactJS</li>
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>DSA</li>
+                            <li>OOPS</li>
+                            <li>MySQL</li>
+                            <li>NumPy</li>
+                            <li>R</li>
+                        </ul> -->
+                    </div>
+                    <div class="tab-contents" id="softskills">
+                        <ul>
+                            <li> Communication Skills</li>
+                            <li>Teamwork</li>
+                            <li>Time Management</li>
+                            <li>Adaptability</li>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="sub-title">Projects</h1>
+            <div class="services-list">
+                <div>
+                    <!-- <i class="fa-solid fa-code fa-sm"></i> -->
+                    <h2>Train Booking Management</h2>
+                    <p>Developed a train booking system using Python and MySQL to manage user authentication, seat
+                        reservations, and
+                        ticket information.
+                        Implemented a login feature to authenticate users and manage their booking information and
+                        profiles.
+                        Created functionality to book and cancel seats for multiple passengers, allowing dynamic seat
+                        allocation based on
+                        availability.
+                        Designed a user-friendly interface to facilitate easy booking, ticket viewing, and profile
+                        management.
+                        Added features for viewing all tickets and managing user profiles to enhance the overall user
+                        experience.
+                        Integrated MySQL for efficient data storage and retrieval, ensuring accurate tracking of seat
+                        availability, booking
+                        details, and user profiles.</p>
+                    <!-- <a href="https://github.com/nivas432002">To visit click here</a> -->
+                </div>
+                <div>
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>E-commerce Website</h2>
+                    <p>Built a mobile-friendly e-commerce platform using HTML, CSS, and JavaScript for a seamless
+                        shopping experience.
+                        A dynamic product catalog with filtering options to enhance product discovery.
+                        Integrated a shopping cart feature for efficient item management and purchase tracking.
+                        Optimized the platform for various devices, ensuring accessibility and responsiveness across all
+                        screen sizes.</p>
+                    <a style="font-size: 20px; color: wheat;" href="https://shimmering-otter-04fed3.netlify.app/">To
+                        visit click here</a>
+
+                </div>
+                <div>
+                    <!-- <i class="fa-solid fa-code fa-sm"></i> -->
+                    <h2>Conference - Website</h2>
+                    <p>Created an event website using HTML, CSS, and JavaScript to provide comprehensive event
+                        information.
+                        Designed sections for speakers, venue details, sponsors, and registration options.
+                        Enhanced the site with interactive elements to engage visitors and promote user participation.
+                        Optimized the overall user experience through intuitive design and responsive features.</p>
+                    <a style="font-size: 20px; color: wheat;" href="https://alot2024.netlify.app/">To visit click
+                        here</a>
+
+                </div>
+                <div>
+                    <!-- <i class="fa-solid fa-code fa-sm"></i> -->
+                    <h2>Text-Utility Website</h2>
+                    <p>Developed a web-based text utility tool using React.js for text customization.
+                        Implemented font selection and uppercase/lowercase toggling to enhance user control over text
+                        appearance.
+                        Added speed adjustment options for text animations, improving user engagement and interactivity.
+                        Integrated a copy-to-clipboard feature to streamline text transfer and user workflow.</p>
+                    <a style="font-size: 20px; color: wheat;" href="https://text-utility-chi.vercel.app/">To visit click
+                        here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="certificates">
+        <div class="container intern">
+            <h1 class="sub-title " style="padding-top: 100px;">Internship</h1>
+            <h3>Web Development Intern</h3>
+            <h4 style="padding-left:100px ;margin-top: 30px;font-size: 25px;">Aamby Valley City Limited,India (June 2024
+                - July 2024)</h4>
+            <ul>
+                <li>Built responsive web interfaces using HTML, CSS, and JavaScript</li>
+                <li> Optimized code for faster load times and better performance</li>
+                <li>Collaborated with designers to translate UI/UX wireframes into functional web pages.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="interest">
+        <div class="container intern">
+            <h1 class="sub-title " style="padding-top: 100px;">Interest</h1>
+            <ul>
+                <li>Coding</li>
+                <li>Outdoor Games</li>
+                <li>Gardening</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title" style="padding-top: 100px;">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i><a
+                            style="color: #fff;text-decoration: none; font-size: 20px;"
+                            href="mailto:divyanshumathur2004@gmail.com">divyanshumathur2004@gmail.com</a></p>
+                    <p><i class="fa-brands fa-github"></i><a href="https://github.com/Divyanshu-Mathur"
+                            style="color: #fff;text-decoration: none; font-size: 20px;">Github</a></p>
+                    <p><i class="fa-solid fa-phone" style="color: #2F52E0;"></i><a href="tel:+919462580443"
+                            style="color: #fff;text-decoration: none; font-size: 20px;">Call me: +91 9462580443</a></p>
+                    <br>
+                    <a href="Divyanshu_Mathur.pdf" download class="button">Download Resume</a>
+                </div>
+                <div class="contact">
+                    <form name="submit-to-google-sheet">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-solid fa-copyright"></i>divyanshumathur2004</p>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/93fbe47332.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
