@@ -10,9 +10,16 @@ html {
 }
 
 body {
-    background: #0B0A07;
+    background-image: url(bg.jpeg);
     color: #ffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
 }
+
 
 #header {
     width: 100%;
@@ -40,7 +47,8 @@ nav {
 
 
 .imag {
-    border-radius: 10%;
+    box-shadow: 0px 6px 0px white;
+    border-radius: 40%;
     margin-bottom: 50%;
     margin-left: 50%;
     height: 50vh;
@@ -48,6 +56,9 @@ nav {
     position: absolute;
     padding-top: 10%;
 }
+
+
+
 
 .typing-effect {
     display: inline-block;
@@ -57,10 +68,55 @@ nav {
     margin: 0 auto;
     letter-spacing: 0.1em;
     line-height: 1;
-    /* Ensure vertical alignment */
+    vertical-align: bottom;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* .typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid #666;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    Ensure vertical alignment 
     vertical-align: bottom;
     animation: typing 4s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
 }
+
+
+
 
 @keyframes typing {
     0% {
@@ -86,7 +142,7 @@ nav {
     50% {
         border-color: #666;
     }
-}
+} */
 
 
 
@@ -117,24 +173,28 @@ nav ul li a {
 
 
 
-.img{
+.img {
     display: flex;
     gap: 7vw;
     flex-wrap: wrap;
 }
 
-.img img{
-    border-radius:10% ;
+.img img {
+    border-radius: 10%;
     box-shadow: 5px 5px 5px grey;
     width: 10vw;
 }
 
 
+nav ul li a:hover {
+    color: #2F52E0;
+}
+
 nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #2F52E0;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -166,6 +226,9 @@ nav ul li a:hover::after {
     flex-wrap: wrap;
 }
 
+
+
+
 .about-col-1 {
     flex-basis: 35%;
 }
@@ -187,7 +250,7 @@ nav ul li a:hover::after {
     padding-right: 100px;
     font-size: 70px;
     font-weight: 400;
-    color: #fff;
+    color: #2F52E0;
 }
 
 .about-col-2 p {
@@ -205,7 +268,7 @@ nav ul li a:hover::after {
 }
 
 .tab-links {
-    color: gray;
+    color: #2F52E0;
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -232,7 +295,7 @@ nav ul li a:hover::after {
 .tab-contents ul li {
     list-style: disc;
     margin: 20px 30px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .tab-contents ul li span {
@@ -322,7 +385,7 @@ nav ul li a:hover::after {
 
 .intern ul li {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
@@ -347,6 +410,7 @@ nav ul li a:hover::after {
     margin-right: 15px;
     font-size: 25px;
 }
+
 
 .social-icons {
     margin-top: 30px;
